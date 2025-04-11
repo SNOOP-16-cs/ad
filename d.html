@@ -1,0 +1,110 @@
+// This file should be saved as .html and viewed in a browser.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeZone Valorant Cup</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans p-6 space-y-16">
+  <!-- Home Page -->
+  <section class="text-center space-y-6">
+    <img
+      src="https://cdn.discordapp.com/attachments/1356816528519069789/1360303282676957424/a_9a01c7dc76363412574e9c735a7fcf67.gif"
+      alt="PrimeZone Logo"
+      class="mx-auto w-28 h-28 rounded-full shadow-lg border-4 border-indigo-500"
+    />
+    <h1 class="text-5xl font-extrabold tracking-tight text-indigo-400">PrimeZone Valorant Cup</h1>
+    <p class="text-lg text-gray-300">April 11 - April 25, 2025 | Middle East Server</p>
+    <a href="#registration" class="inline-block mt-4 bg-indigo-600 hover:bg-indigo-700 text-lg px-8 py-4 rounded-xl shadow-md">Register Your Team</a>
+    <p class="mt-6 max-w-2xl mx-auto text-gray-400">
+      Join up to 16 teams in a thrilling showdown for cash prizes! The tournament
+      starts on April 26 and concludes on April 28. Don’t miss out!
+    </p>
+  </section>
+
+  <!-- Registration Page -->
+  <section id="registration" class="space-y-6 bg-gray-800 p-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-indigo-300 text-center">Register Your Team</h2>
+    <!-- Start of form -->
+    <form class="space-y-5" action="https://formsubmit.co/nazimlaggo27@gmail.com" method="POST">
+      <!-- Honeypot field to help block bots -->
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Enable CAPTCHA protection -->
+      <input type="hidden" name="_captcha" value="true" />
+      <input type="hidden" name="_next" value="https://example.com/thank-you.html" />
+
+      <!-- Team Info Section -->
+      <div class="space-y-2">
+        <h3 class="text-xl font-semibold text-indigo-200">Section 1: Team Info</h3>
+        <input type="text" name="teamName" placeholder="Team Name (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="captainName" placeholder="Team Captain’s Name (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="captainDiscord" placeholder="Team Captain’s Discord Tag (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="email" name="email" placeholder="Contact Email (optional)" class="w-full p-2 rounded bg-gray-700" />
+      </div>
+      <!-- Player Info Section -->
+      <div class="space-y-2">
+        <h3 class="text-xl font-semibold text-indigo-200">Section 2: Players</h3>
+        <input type="text" name="player1" placeholder="Player 1 - Full Name & Discord Tag (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="player2" placeholder="Player 2 - Full Name & Discord Tag (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="player3" placeholder="Player 3 - Full Name & Discord Tag (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="player4" placeholder="Player 4 - Full Name & Discord Tag (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="player5" placeholder="Player 5 - Full Name & Discord Tag (required)" required class="w-full p-2 rounded bg-gray-700" />
+        <input type="text" name="subPlayer" placeholder="Substitute Player - Full Name & Discord Tag (optional)" class="w-full p-2 rounded bg-gray-700" />
+      </div>
+      <!-- Riot IDs Section -->
+      <div class="space-y-2">
+        <h3 class="text-xl font-semibold text-indigo-200">Section 3: Game Info</h3>
+        <textarea name="riotIDs" placeholder="Valorant Riot IDs for all players (optional)" rows="3" class="w-full p-2 rounded bg-gray-700"></textarea>
+      </div>
+      <!-- Rules Confirmation Section -->
+      <div class="space-y-2">
+        <h3 class="text-xl font-semibold text-indigo-200">Section 4: Rules Confirmation</h3>
+        <label class="inline-flex items-center">
+          <input type="checkbox" name="agreeRules" required class="form-checkbox text-indigo-600" />
+          <span class="ml-2 text-gray-300">Yes, I agree to follow the tournament rules and respect other players</span>
+        </label>
+      </div>
+      <!-- Final Comments Section -->
+      <div class="space-y-2">
+        <h3 class="text-xl font-semibold text-indigo-200">Section 5: Final Step</h3>
+        <textarea name="comments" placeholder="Anything you want to share with the organizers? (optional)" rows="3" class="w-full p-2 rounded bg-gray-700"></textarea>
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 text-lg rounded-lg shadow-md">Submit</button>
+    </form>
+  </section>
+
+  <!-- Rules Page -->
+  <section class="space-y-3 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold text-indigo-300">Tournament Rules</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+      <li>Match format: Best of 1 (Final is Best of 3)</li>
+      <li>Be ready 10 minutes before match time</li>
+      <li>Zero tolerance for cheating or hacking</li>
+      <li>Respectful behavior is mandatory</li>
+      <li>Official Riot tournament guidelines: <a href="#" class="text-blue-400 underline">View Here</a></li>
+    </ul>
+  </section>
+
+  <!-- FAQ Page -->
+  <section class="space-y-3 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold text-indigo-300">FAQ</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+      <li>How to contact the organizers? – Via our Discord server</li>
+      <li>Can I change players after registering? – Yes, until April 18</li>
+      <li>When do matches start? – April 20, 2025</li>
+      <li>What’s the tournament format? – Single Elimination</li>
+    </ul>
+  </section>
+
+  <!-- Contact / Discord Page -->
+  <section class="text-center space-y-4">
+    <h2 class="text-3xl font-semibold text-indigo-300">Join Our Discord</h2>
+    <p class="text-gray-400">For support, questions, and updates.</p>
+    <a href="https://discord.gg/primezone" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white text-lg px-6 py-3 rounded-xl shadow-lg">Join Discord</a>
+  </section>
+</body>
+</html>
